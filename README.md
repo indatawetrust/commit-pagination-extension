@@ -1,2 +1,2 @@
-# github-commit-pagination-extension
+# commit-pagination-extension
 Github commit pagination extension
