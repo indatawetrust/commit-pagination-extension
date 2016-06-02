@@ -1,0 +1,22 @@
+{
+  "name": "github commit pagination",
+  "version": "0.1",
+  "description": "github commit pagination",
+  "permissions": [
+	"tabs", "https://github.com/*"
+  ],
+  "background": {
+	"scripts": [
+	    "background.js"
+	],
+	"persistent":false  
+  },
+  "content_scripts": [
+	{
+		"matches": ["https://github.com/*"],
+		"js": ["fix.js"],
+		"run_at": "document_end"
+	}
+  ],
+  "manifest_version": 2
+}
